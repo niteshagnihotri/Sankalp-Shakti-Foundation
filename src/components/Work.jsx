@@ -14,7 +14,7 @@ export default function Work() {
                 </div>
                 <div className="space-y-10 mx-5">
                     <div className="grid gap-12 lg:grid-cols-2">
-                        <motion.div initial={{ opacity: 0}} whileInView={{ opacity: 1}} transition={{ delay: 0.3, type: "tween", stiffness: 100 }} viewport={{ once: true }} className="p-1 rounded-xl group md:h-56 sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
+                        <motion.div initial={{y: 10, opacity: 0}} whileInView={{y:0, opacity: 1}} transition={{ delay: 0.3, type: "tween", stiffness: 100 }} viewport={{ once: true }} className="p-1 rounded-xl group md:h-56 sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
                             <img src={w1} alt="sankalp shakti foundation" loading="lazy" 
                                 className="h-56 sm:h-full w-full sm:w-5/12 object-cover rounded-lg transition duration-500 group-hover:rounded-xl hover:scale-105" />
                             <div className="sm:w-7/12 pl-0 p-5">

@@ -36,7 +36,7 @@ export default function Header() {
         }>
             
             <div className="w-100">
-                <div className="md:w-9/12  md:mx-auto md:flex space-y-4 md:space-y-0 items-center align-middle  py-2 md:py-0 pb-3 md:pb-0">
+                <div className="md:w-9/12  md:mx-auto md:flex space-y-4 md:space-y-0 items-center align-middle  py-3 md:py-0 pb-3 md:pb-0">
                     <div className="w-full  md:flex items-center justify-between ">
                         <div className="flex items-center justify-between ">
                             <Link to="/" onClick={()=>window.scrollTo(0,0)}><img className="w-20 p-0 m-0 lg1:ml-5 cursor-pointer" src={logo} alt="sankalp shakti foundation" /></Link>
