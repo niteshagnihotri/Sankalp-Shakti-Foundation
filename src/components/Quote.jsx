@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Quote(){
     return (
         <div>
-            <div className="Qoute w-100 h-auto bg-slate-600 bg-fixed font-QuickSand font-bold text-3xl">
+            <div className="Qoute w-100 h-auto bg-slate-600 font-QuickSand font-bold text-3xl">
             <div className="py-4 h-auto lg:w-10/12 mx-auto">
                 <div initial={{y: 2, opacity:0}} whileInView={ {y: 0, opacity:1} } transition={{ delay: 0.3, type: "tween", stiffness: 100 }} viewport={{ once: true }}   className="w-10/12 mx-auto bg-gray-100 bg-opacity-50 text-center flex flex-col items-center space-y-10 py-16 my-28 font-Raleway px-8">
                     <motion.h1 className="leading-10" initial={{y: 2, opacity:0}} whileInView={ {y: 0, opacity:1} } transition={{ delay: 0.3, type: "tween", stiffness: 100 }} viewport={{ once: true }}   >
