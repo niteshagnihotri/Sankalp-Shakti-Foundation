@@ -9,7 +9,7 @@ export default function Footer() {
 
     return (
 
-        <div className="w-100 h-100 bg-gray-800 pb-20 py-8 md:pb-3 md:py-8 text-white font-SourceSans px-5 text-sm">
+        <div className="w-100 h-100 bg-gray-800 pt-8 pb-6 md:pb-3 md:py-8 text-white font-SourceSans px-5 text-sm">
             <div className="md:w-9/12 md:mx-auto mx-3 sm:mx-5 pt-10 md:flex md:flex-row md:justify-between space-y-3 md:space-y-0">
 
                 <div className="flex flex-col w-fit h-auto sm:w-80 leading-loose">
@@ -60,7 +60,7 @@ export default function Footer() {
 
             </div>
             <div className="md:w-9/12 md:mx-auto px-2 mt-10 text-slate-300 text-center text-sm md:leading-10 leading-6">
-                Copyright © Sankalp Shakti Foundation 2022. All right reserved. Designed & Developed by <Link to="//niteshagnihotri.netlify.app/" className="no-underline text-slate-300 font-semibold">Nitesh Agnihotri</Link>
+                Copyright © Sankalp Shakti Foundation 2022. Designed & Developed by <Link to="//niteshagnihotri.netlify.app/" className="no-underline text-slate-300 font-semibold">Nitesh Agnihotri</Link>
             </div>
         </div>
 
