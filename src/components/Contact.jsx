@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import { HiOutlineOfficeBuilding } from 'react-icons/hi';
 import { IoMdCall } from 'react-icons/io';
 import { RiCustomerService2Fill } from 'react-icons/ri';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import {motion} from 'framer-motion';
 
 
@@ -28,8 +28,14 @@ export default function Contact() {
     }
    
     const sendEmail = (e) =>{
-            // emailjs.send("technicianondoor_mail", "query_mail", user, 'UHgVYyZ054pIrjLcf');
+            emailjs.send("ssf_sid", "template_tlayjd4", user, 'ztpnwBX9RjT15XHfd');
             window.alert("Request submitted");
+                setUser({
+                    name: "",
+                    email: "",
+                    phone: "",
+                    message: "",
+                })
         };
 
     return (
