@@ -31,10 +31,12 @@ export default function Contact() {
             emailjs.send("ssf_sid", "template_tlayjd4", user, 'ztpnwBX9RjT15XHfd');
             window.alert("Request submitted");
                 setUser({
-                    name: "",
+                    firstname: "",
+                    lastname: "",
                     email: "",
-                    phone: "",
-                    message: "",
+                    city: "",
+                    zip: "",
+                    phone: ""
                 })
         };
 
