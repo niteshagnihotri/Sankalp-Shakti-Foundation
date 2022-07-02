@@ -13,7 +13,7 @@ export default function Routing(){
     return (
         <>
         <Header/>
-          <Suspense fallback={<div className="text-md h-[100vh] flex items-center justify-center font-QuickSand font-bold text-center ">Loading...</div>}>
+          <Suspense>
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route exact path="/home" element={<Home />} />
