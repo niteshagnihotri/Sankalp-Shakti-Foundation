@@ -45,14 +45,14 @@ export default function Footer() {
                     <div className='flex items-center'>
                         <IoMdCall className='text-xl mr-5 text-green-700' />
                         <h1 className="md:flex items-center ">
-                            Call : <span className="cursor-pointer" onClick={() => window.location = 'tel:+919343210457'}>+919343210457 / +919343210457</span>
+                            Call : <span className="cursor-pointer" onClick={() => window.location = 'tel:+919990495523'}>+919990495523 / +919990495523</span>
                         </h1>
                     </div>
 
                     <div className='flex items-center'>
                         <IoMdMail className='text-xl mr-5 text-green-700' />
                         <h1 className="md:flex items-center ">
-                            Email : <span className="cursor-pointer" onClick={() => window.location = 'mailto:bhopaltechnician@gmail.com'}>bhopaltechnician@gmail.com</span>
+                            Email : <span className="cursor-pointer" onClick={() => window.location = 'mailto:sankalpshaktifoundation@gmail.com'}>sankalpshaktifoundation@gmail.com</span>
                         </h1>
                     </div>
 
