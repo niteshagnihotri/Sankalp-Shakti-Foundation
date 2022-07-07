@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import img from '../images/logo.jpg';
 import { Link } from 'react-router-dom';
 import { HiOutlineOfficeBuilding } from 'react-icons/hi';
@@ -6,6 +6,8 @@ import { IoMdCall } from 'react-icons/io';
 import { IoMdMail } from 'react-icons/io';
 
 export default function Footer() {
+
+    const br = useState(window.innerWidth <= 550 ? <br /> : null);
 
     return (
 
@@ -25,42 +27,42 @@ export default function Footer() {
                 <div className="flex flex-col space-y-8 lg:px-5 pt-10">
                     <h1 className="text-xl font-bold font-Mont translate-0 md:-translate-x-5">Quick links</h1>
                     <ul className="space-y-6 pl-5 list-disc" >
-                        <li><Link onClick={() => { window.scrollTo(0, 0)}} className="cursor-pointer hover:text-green-500 text-lg" to="/">Home</Link></li>
-                        <li><Link onClick={() => { window.scrollTo(0, 0)}} className="cursor-pointer hover:text-green-500 text-lg" to="/about">About</Link></li>
-                        <li><Link onClick={() => { window.scrollTo(0, 0)}} className="cursor-pointer hover:text-green-500 text-lg" to="/service">Services</Link></li>
-                        <li><Link onClick={() => { window.scrollTo(0, 0)}} className="cursor-pointer hover:text-green-500 text-lg" to="/contact">Contact</Link></li>
+                        <li><Link onClick={() => { window.scrollTo(0, 0)}} className="cursor-pointer hover:text-green-500 text-md" to="/">Home</Link></li>
+                        <li><Link onClick={() => { window.scrollTo(0, 0)}} className="cursor-pointer hover:text-green-500 text-md" to="/about">About</Link></li>
+                        <li><Link onClick={() => { window.scrollTo(0, 0)}} className="cursor-pointer hover:text-green-500 text-md" to="/services">Services</Link></li>
+                        <li><Link onClick={() => { window.scrollTo(0, 0)}} className="cursor-pointer hover:text-green-500 text-md" to="/contact">Contact</Link></li>
                     </ul>
                 </div>
 
-                <div className="flex flex-col space-y-8 md:flex md:flex-col text-lg py-10">
+                <div className="flex flex-col space-y-8 md:flex md:flex-col text-md py-10">
                     <h1 className='text-xl font-bold font-Mont '>Reach us</h1>
 
                     <div className='flex items-center'>
                         <HiOutlineOfficeBuilding className='text-xl mr-5 text-green-700' />
                         <h1 className="md:flex items-center ">
-                            Address : H-21 karolbagh, Delhi
+                            Address : 4/14, Sunder Nagri, Delhi 110093
                         </h1>
                     </div>
 
                     <div className='flex items-center'>
                         <IoMdCall className='text-xl mr-5 text-green-700' />
                         <h1 className="md:flex items-center ">
-                            Call : <span className="cursor-pointer" onClick={() => window.location = 'tel:+919990495523'}>+919990495523 / +919990495523</span>
+                            Call : <span className="cursor-pointer" onClick={() => window.location = 'tel:+919990495523'}> +919990495523 / +919990495523</span>
                         </h1>
                     </div>
 
                     <div className='flex items-center'>
                         <IoMdMail className='text-xl mr-5 text-green-700' />
                         <h1 className="md:flex items-center ">
-                            Email : <span className="cursor-pointer" onClick={() => window.location = 'mailto:sankalpshaktifoundation@gmail.com'}>sankalpshaktifoundation@gmail.com</span>
+                            Email : <span className="cursor-pointer" onClick={() => window.location = 'mailto:sankalpshaktifoundation@gmail.com'}> sankalpshaktifoundation@gmail.com</span>
                         </h1>
                     </div>
 
                 </div>
 
             </div>
-            <div className="md:w-9/12 md:mx-auto px-2 mt-10 text-slate-300 text-center text-sm md:leading-10 leading-6">
-                Copyright © Sankalp Shakti Foundation 2022. Designed & Developed by <Link to="//niteshagnihotri.netlify.app/" className="no-underline text-slate-300 font-semibold">Nitesh Agnihotri</Link>
+            <div className="md:w-9/12 md:mx-auto px-2 mt-10 text-slate-300 text-center text-xs md:text-sm md:leading-10 leading-6">
+                Copyright © Sankalp Shakti Foundation 2022. {br} Designed & Developed by <Link to="//niteshagnihotri.netlify.app/" className="no-underline text-slate-300 font-semibold">Nitesh Agnihotri</Link>
             </div>
         </div>
 

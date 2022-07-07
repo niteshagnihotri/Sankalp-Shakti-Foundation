@@ -98,15 +98,15 @@ export default function Contact() {
                 <motion.div initial={{ opacity: 0, x: 4 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.3, type: "tween", stiffness: 100 }} viewport={{ once: true }}   className=" w-full px-1 py-5 md:py-5 space-y-10 md:flex md:flex-col justify-center text-lg ">
                     <h1 className='text-3xl md:text-4xl text-center md:text-left'>Reach us</h1>
 
-                    <div className='flex items-center'>
-                        <HiOutlineOfficeBuilding className='text-xl mx-5 text-green-700' />
-                        <h1 className="md:flex items-center ">
-                            Address : 4/14, Sunder Nagri, Delhi 110093
+                    <div className=''>
+                        
+                        <h1 className="flex align-middle">
+                        <HiOutlineOfficeBuilding className='self-start text-xl mt-1 mx-3 text-green-700' /> Address : 4/14, Sunder Nagri, Delhi 110093
                         </h1>
                     </div>
 
                     <div className='flex items-center'>
-                        <IoMdCall className='text-xl mx-5 text-green-700' />
+                        <IoMdCall className='text-xl mx-3 text-green-700' />
                         <h1 className="md:flex items-center hover:underline">
                             Call : <span className="cursor-pointer" onClick={() => window.location = 'tel:+919990495523'}>+919990495523 / +919990495523</span>
                         </h1>

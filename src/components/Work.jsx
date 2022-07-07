@@ -1,5 +1,5 @@
 import w1 from '../images/main2.jpg';
-import w2 from '../images/work2.jpg';
+import w2 from '../images/work2.jpeg';
 import w3 from '../images/work3.jpg';
 import w4 from '../images/work4.jpg';
 import {motion} from 'framer-motion';
