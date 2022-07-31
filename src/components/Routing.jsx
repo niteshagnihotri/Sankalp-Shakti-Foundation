@@ -17,7 +17,7 @@ export default function Routing() {
         <div class="h-[100vh] flex justify-center items-center">
           <div class="flex justify-center items-center">
             <div class="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full" role="status">
-              <span class="visually-hidden">Wait a While...</span>
+              <span class="visually-hidden"></span>
             </div>
           </div>
         </div>}>
